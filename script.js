@@ -1,16 +1,10 @@
-/*
-Mostrar los personajes sin filtrar
-Obtener personajes llamados a la api
-Renderizar en el DOM
-Cambio de filtros al hacer un llamado a la api
-Renderizar nuevamente
-*/
+//Variables
 
 const charactersEl = document.getElementById('characters');
 const nameFilterEl = document.getElementById('name-filter');
 const statusFilterEl = document.getElementById('status-filter');
 
-//Crear funcion que llame a la api
+//Funcion que llama a la api
 
 async function getCharacters (name, status){
     
@@ -35,7 +29,7 @@ async function getCharacters (name, status){
     return data.results;
 }
 
-//Renderizar elementos en el DOM
+//Renderizado del DOM
 
 async function displayCharacters (name, status) {
 
